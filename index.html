@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <body>
+        <pre id="t1"></pre>
+        <script type="text/javascript">
+            var prams = new URLSearchParams(window.location.search)
+            $.getJSON("users.json", function(data1) {
+                // var user1 = data1.filter(function(ele) {
+                //     var name = '=' + ele.name;
+                //     return name == prams;
+                // });
+                // var json = JSON.stringify(user1, null, 4);
+                // console.log(user1)
+                var parse = JSON.stringify(data1, null, 1)
+                document.getElementById("t1").innerHTML = parse;
+            });
+        </script>
+    </body>
+
+</html>
