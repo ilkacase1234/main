@@ -1,0 +1,10 @@
+{
+'post1' : 'http://0.0.0.0:8080/',
+'get1' : 'http://0.0.0.0:8080/',
+'patch1' : 'http://0.0.0.0:8080/',
+'delete1' : 'http://0.0.0.0:8080/',
+'put1' : 'http://0.0.0.0:8080/',
+'upload1' : 'http://0.0.0.0:8080/?path=/upload_file/',
+'deleteFile' : 'http://0.0.0.0:8080/?path=/delete_file/',
+'dir1' : 'http://0.0.0.0:8080/uploads/users/'
+}
