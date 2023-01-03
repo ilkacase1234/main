@@ -1,13 +1,13 @@
 [{
-        "name": "ahmed",
-        "id": 1
+        "email": "ahmed",
+        "password": 1
     },
     {
-        "name": "fatah",
-        "id": 2
+        "email": "fatah",
+        "password": 2
     },
     {
-        "name": "ali",
-        "id": 3
+        "email": "ali",
+        "password": 3
     }
 ]
