@@ -1,13 +1,34 @@
 [{
-        "email": "ahmed",
-        "password": 1
+        "email": "ahmed@gmail.com",
+        "password": "123",
+        "role": "student",
+        "rollNumber": "12344",
+        "id": "1262672888",
+        "name": "ahmed",
+        "image": "",
+        "class": "5",
+        "password": "123"
     },
     {
-        "email": "fatah",
-        "password": 2
+        "email": "ali@gmail.com",
+        "password": "123",
+        "role": "admin",
+        "rollNumber": "12344",
+        "id": "126992672888",
+        "name": "ali",
+        "image": "",
+        "class": "7",
+        "password": "123"
     },
     {
-        "email": "ali",
-        "password": 3
+        "email": "abdi@gmail.com",
+        "password": "123",
+        "role": "teacher",
+        "rollNumber": "12344",
+        "id": "126267672888",
+        "name": "abdi",
+        "image": "",
+        "class": "9",
+        "password": "123"
     }
 ]
