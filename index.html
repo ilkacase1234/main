@@ -37,40 +37,17 @@
   </style>
 </head>
 <body>
-  <div id="series-container" class="flex-wrap-container"></div>
-
-  <div id="video-popup" class="popup">
-    <video id="popup-video-player" class="popup-video" controls></video>
-  </div>
-
+  <h1>enter below input for request deletion account email</h1>
+  <input type="text" value="" placeholder="enter here the account email to be deleted">
+  <input type="submit" value="send request" onclick="reqDel()">
   <script>
-    const seriesContainer = document.getElementById("series-container");
-    const videoPopup = document.getElementById("video-popup");
-    const videoPlayer = document.getElementById("popup-video-player");
-
-    fetch('https://script.google.com/macros/s/AKfycbyAxlcsYtGn-3i4yqe9er8Fdvvb8N_-DTQdHvN35m8hwzA09dUKP2g5CNbG-ItiCZcUcQ/exec?sheet=serieses&method=get')
+    function reqDel(){
+      fetch('https://script.google.com/macros/s/AKfycbyAxlcsYtGn-3i4yqe9er8Fdvvb8N_-DTQdHvN35m8hwzA09dUKP2g5CNbG-ItiCZcUcQ/exec?sheet=users&method=delete&id=128812754')
       .then(response => response.json())
-      .then(data => {
-        data.forEach(series => {
-          const card = document.createElement("div");
-          card.classList.add("series-card");
-          card.textContent = series.name;
-          const parsedData = JSON.parse(series.seasons);
-          const image = document.createElement("img");
-          image.src = series.image;
-          image.alt = series.name;
-          card.appendChild(image);
-          
-          card.addEventListener("click", () => {
-          var vide = parsedData[0].episodes[0].link
-            videoPlayer.src = vide;
-            videoPopup.style.display = "flex";
-          });
-          
-          seriesContainer.appendChild(card);
+        .then((data)=>{
+          alert("account deleted")
         });
-      })
-      .catch(err => console.error(err));
+    }
   </script>
 </body>
 </html>
